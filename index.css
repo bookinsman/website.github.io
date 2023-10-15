@@ -232,12 +232,6 @@ span {
     background: linear-gradient(145deg, #232323, #2a2a2a);
 }
 
-/* Adding a hover effect to simulate a 3D press effect */
-#animTextHolder:hover {
-    transform: translateY(5px); /* Move it slightly down when hovered */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.24); /* Reduce shadow size to simulate 'press' */
-}
-
 /* Optional: If you have any text directly inside `#animTextHolder`, give it a bit of text shadow for depth */
 #animTextHolder > p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
