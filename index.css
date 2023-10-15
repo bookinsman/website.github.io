@@ -247,7 +247,7 @@ span {
 #swipeIcon {
     position: fixed;
     right: 50%; /* Start from the center of the screen */
-    bottom: 20px; /* Start from the bottom of the screen */
+    bottom: 50px; /* Start from the bottom of the screen */
     transform: translateX(50%); /* Adjust for the exact center */
     width: 50px;
     height: 50px;
@@ -261,3 +261,22 @@ span {
 #swipeIcon:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
+
+@keyframes bubbleAnimation {
+    0% {
+        transform: translateX(50%) scale(1);
+    }
+    50% {
+        transform: translateX(50%) scale(1.1);
+    }
+    100% {
+        transform: translateX(50%) scale(1);
+    }
+}
+
+#swipeIcon.animate {
+    animation: bubbleAnimation 0.3s ease-in-out;
+}
+
+
+

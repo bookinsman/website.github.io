@@ -53,6 +53,20 @@
         showSlide();
 
         $("#swipeIcon").on('click', function() {
-    nextSlide();
+            nextSlide();
+            
+            // Add animation class
+            $(this).addClass('animate');
+        
+            // Remove the animation class after it's done so it can be triggered again
+            setTimeout(() => {
+                $(this).removeClass('animate');
+            }, 300); // matches the animation duration
+        });
+        $(document).ready(function() {
+    // Assuming the typing animation takes 4 seconds (as in the CSS example)
+    setTimeout(() => {
+        $('.glow-text').addClass('glow-text');
+    }, 4000);
 });
     });
