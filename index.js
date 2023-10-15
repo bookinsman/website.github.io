@@ -65,5 +65,26 @@ $(document).ready(function() {
     }, function() {
         $("#previewHolder").hide();
     });
+    const touchParticle = document.getElementById('touchParticle');
+
+document.addEventListener('touchstart', function(e) {
+    moveParticle(e.touches[0].clientX, e.touches[0].clientY);
+    touchParticle.style.transform = "translate(-50%, -50%) scale(1)";
+});
+
+document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+    moveParticle(e.touches[0].clientX, e.touches[0].clientY);
+});
+
+document.addEventListener('touchend', function() {
+    touchParticle.style.transform = "translate(-50%, -50%) scale(0)";
+});
+
+function moveParticle(x, y) {
+    touchParticle.style.left = x + 'px';
+    touchParticle.style.top = y + 'px';
+}
+
     
 });
