@@ -16,7 +16,7 @@
                     $(".slide:visible .item:nth-child(" + i + ")").css({
                         "opacity": "1",
                         "transition": "opacity 0.7s ease",
-                        "transition-delay": i / 10 + "s"
+                        "transition-delay": i / 12 + "s"
                     });
                 }
             }, 0);
@@ -63,12 +63,7 @@
                 $(this).removeClass('animate');
             }, 300); // matches the animation duration
         });
-        $(document).ready(function() {
-    // Assuming the typing animation takes 4 seconds (as in the CSS example)
-    setTimeout(() => {
-        $('.glow-text').addClass('glow-text');
-    }, 4000);
-});
+
 $(function() {
     let currentSlide = 0;
     let slides = $("#animTextHolder .slide");

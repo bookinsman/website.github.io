@@ -3,10 +3,7 @@
     padding: 0;
 }
 
-body, html {
-    height: 100%;
-    overflow: hidden; /* Prevents scrolling */
-}
+
 
 #mainHolder {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -55,7 +52,7 @@ span {
 .items_holder {
     font-family: "Cutive Mono", monospace;
     font-size: 1em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0em;
     white-space: pre;
 }
 
