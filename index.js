@@ -69,4 +69,22 @@
         $('.glow-text').addClass('glow-text');
     }, 4000);
 });
+$(function() {
+    let currentSlide = 0;
+    let slides = $("#animTextHolder .slide");
+    
+    slides.not(":eq(0)").hide();
+    
+    $("body").on("swipeleft", function() {
+        slides.eq(currentSlide).hide();
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides.eq(currentSlide).show();
+    });
+    
+    $("body").on("swiperight", function() {
+        slides.eq(currentSlide).hide();
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        slides.eq(currentSlide).show();
+    });
+});
     });
