@@ -251,3 +251,36 @@ span {
     max-height: 80vh;
     object-fit: cover;
 }
+
+@keyframes bounce {
+
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+#guidelines {
+    position: fixed;
+    bottom: 5%;  
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    color: #2c3e50;  /* Darker text for contrast against the light background */
+    font-size: 16px;
+    text-align: center;  
+    animation: bounce 2s infinite;
+    padding: 10px 20px;  /* Padding for a more pronounced 3D effect */
+    border-radius: 20px;  /* Rounded corners */
+    
+    /* Shadow and 3D effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+}
+
+body {
+    /* Gradient background for a modern look */
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+}
+
