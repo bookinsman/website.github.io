@@ -3,6 +3,7 @@ $(document).ready(function() {
     let currentSlide = 0;
 
     function showSlide() {
+        $('.slide:visible .items_holder').scrollTop($('.slide:visible .items_holder')[0].scrollHeight);
         $(slides).hide(); // Hide all slides
         $(slides[currentSlide]).show(); // Show the current slide
 
@@ -79,3 +80,5 @@ $(document).ready(function() {
         hideGuidelines();
     });
 });
+
+
