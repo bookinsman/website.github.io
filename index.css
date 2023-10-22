@@ -19,7 +19,13 @@
     margin: 20px;
     border-radius: 5px;
     position: relative;
+    width: 300px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    overflow: hidden; /* Hide overflowing content */
+    white-space: nowrap; /* Prevent wrapping to the next line */
 }
+
+
 
 .slide {
     display: none;
@@ -151,4 +157,8 @@ span {
 
 #retryBtn:hover {
     background-color: #0056b3;
+}
+
+body, html {
+    overflow: hidden;
 }
