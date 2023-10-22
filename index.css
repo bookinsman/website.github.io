@@ -23,6 +23,7 @@
     height: 150px; /* Fixed height */
     overflow: hidden; /* Hide overflowing content */
     white-space: nowrap; /* Prevent wrapping to the next line */
+    overflow: hidden;
 }
 
 
