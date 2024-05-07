@@ -2,37 +2,79 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Text Animation</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
-
 <body>
-    
     <div id="mainHolder">
-        <div id="timer">Time: 0 seconds</div>
-        <div id="shareBtn">Share Your Time</div>
-
         <div id="animTextHolder">
+            <!-- Sample slides for demonstration -->
+            
             <div class="slide">
-                <p class="items_holder">Enei vienuolika. Ji vėtoma ir mėtoma iš globos namų pas globėjus ir vėl į globos namus, kol vieną dieną atsiduria pas Hagenus. 
-                    Ten viskas kitaip: didelis butas, nuosavas kambarys ir naujas mobilusis. Panašu, kad Hagenams ir naujam įbroliui ji tikrai patinka.</p>
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHc03M07PGF4TbkGfMh9Tsv00NN2CuEvYsSuWQlEpBnJTvVrsUDFFQKmKVqoh05FzMsrQTBNdbz2oSiofSwJ6IbfBLSxvx3D9uK-ve9n7n0d8I3u4Mg=w2400" alt="Description of Image 1">
+                <p class="items_holder">Your balance is $-567,072,565.13. The number is blocked. You are facing 26 years of servitude in uranium mines.</p>
             </div>
-            <!-- Add more slides here -->
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHdq1NT0JIomMHNLKcMXG46J7gfaEsuUU8F7E-FB6ebXSLv3Ic0DzO55mBWwALirAysbUoRXAyySbC9W6vGaDJf7Tyf3BVdBAmqUHmbeDxGkJksNAOw=w2400" alt="Description of Image 1">
+                <p class="items_holder">The ship approaching the target — Europa-6, was unusually quiet. Only the robot-administrator kept repeating: "Breach in the third compartment…</p>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHdVaoj2SIYwbptrdtnrSNU7ZYuErBrxmsVaKsRpkK6fo3K_T4d7omhOTx0TupL_cgEZcDBkCiXX7bAk257ab73UJg3CfUhvweWrcSlhnKaJGRqh_C8=w2400" alt="Description of Image 1">
+                <p class="items_holder">The morning forest in summer is green and resonant. Yet it still smells of burnt plastic... 'Enough,' they took off the VR helmet from the head. 'It's my turn to watch nature!</p>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHfE0s-vh7f2JQAQ64J1Cf4a_5K_mjCmABU43MYKV78PaJ6n2_LbmdHTEdy6HbzmDW_KShZeZy5dniaD8nWgrVPTis-S4ZefONNcrrGrUc-GTbtBN8Q=w2400" alt="Description of Image 1">
+                <p class="items_holder">Amidst the chaos of the city, a forgotten diary rested on a park bench, holding the secrets of a forbidden romance.</p>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHfDHCEuZRl5lGVt09mFeoxZNeF_rQvkWy3a1umF4JluPj6Qspm0WX2uhVxH410WmEVpymDaZV09XCmbVGHHqExKNW-DELnwvQkJ-2rEnaO_2cqBVQE=w2400" alt="Description of Image 1">
+                <p class="items_holder">In the park, he fed the pigeons every day. But one day the swans arrived. His amazement was immense. Everything around him seemed different.</p>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHcossOydWejGtTD4iynhV8mFhbtFJ5rPD9kk9w_0rhpnEv104fYsczBr8rEu8QJAzqDRa9QWzi4znMQgkvGGhV2lNOBTMxJ1fHxuiY5HtrxGsNKaFQ=w2400" alt="Description of Image 1">
+                <p class="items_holder">At the library, the boy borrowed the same book every week. One day, inside was a secret note. The game between the two friends began.</p>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHdH8PjOdNOPd-PzMEhG6DzLXix7BYZixeqNHVKWcdZR8MkFp2mJu4TBCnrIcPMLpWlgTG-6auTFESjRHwovfDfx6ZwlIELhg0jSXRqVEVgqWcMash4=w2400" alt="Description of Image 1">
+                <p class="items_holder">The father read his daughter a story every night. Even when she grew up and moved away, his voice echoed in her heart.</p>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHcXartzkMvwdIFeoTzCJJAVhDMzUOYz1rpL02TvESIZFLReth_0Xea2lV4YlTtCCTzj6ElzAc5cOIgLKpI7HoAHG2Bnpe4E8i7nTZaB9ryNCJLp00A=w2400" alt="Description of Image 1">
+                <p class="items_holder">In an abandoned mansion, a grand piano played every night. No one had lived there in decades.</p>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHdf5HvAPiIha9AE5e033qPTB2Z9-KY50abSu9gZoqSLjcjaRFz7CTYKxluKUwzpm5ctIqBnB62rBogETWt7BxZJoMymVhq9rPeecVZJvuTyumDsLQQ=w2400" alt="Description of Image 1">
+                <p class="items_holder">She danced alone in the pouring rain, and her tears merged with the drops, making her grief indistinguishable from nature.</p>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHf5zhDRPpkQGbouKXL1mK4hUcHnOfokrvX2-xCIZVmACzeFMsYoMsqvtj6nibZOMiwjzMa7Tg2hORS7bxtZQXtLMan7V69DV9rfAmK-0uHeI-b8JDo=w2400" alt="Description of Image 1">
+                <p class="items_holder">When he passed through the mysterious forest, all the birds and animals fell silent, sensing in his presence traces of the distant past.</p>
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHc9mqqc-1DTT8t6vps5cgSbLwOy82bH2NmvII6V2nzTPHDvFP_6JsOsku2NTTX9sz0Rg8ClSinGbflwAqHaLEfd0hZ8-xLRdP2D9q7h-n-80P5FSeE=w2400" alt="Description of Image 1">
+                <p class="items_holder">In a shattered world where deserts have swallowed up cities, the last flower, a symbol of forgotten hope, was kept in a museum under glass.</p>
+            </div>
+            <!-- ... other slides ... -->
         </div>
-        <div id="bubbleContainer"></div>
-        
 
-
-        <div id="shapeHolder">
-            <!-- Shapes appended here -->
-          </div>
     </div>
+
+
+
+    <div id="guidelines">
+        Swipe
+    </div>
+
     <script src="index.js"></script>
 </body>
 
