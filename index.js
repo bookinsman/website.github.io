@@ -2,19 +2,14 @@ $(document).ready(function() {
     const slides = $('.slide');
     let currentSlide = 0;
 
-    function resetTextAnimation(slide) {
-        const items = $(slide).find('.item');
-        items.css("opacity", "0");
-        setTimeout(() => {
-            items.each(function(index, item) {
-                $(item).css({
-                    "opacity": "1",
-                    "transition": "opacity 0.7s ease",
-                    "transition-delay": (index + 1) / 12 + "s"
-                });
-            });
-        }, 0);
-    }
+
+function resetTextAnimation(slide) {
+    const items = $(slide).find('.item');
+    items.css("opacity", "1"); // Ensure text is visible without animation
+}
+
+
+
 
     function showSlide() {
         $(slides).hide();
